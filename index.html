@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKATERS WEBS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo4.png" class="logo1">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">Board Items</a></li>
+                    <li><a href="">SkateBoard Accessories</a></li>
+                    <li><a href="">Deck Board</a></li>
+                    <li><a href="">Others</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu1.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Tricks Boards <br>Trickster Skate Co. </h2>
+                <h3>High-quality wheels <br>and bearings for <br> smooth motion.</h3>
+                <p>(Tricks/Street)</p>
+                <h4>₱100,550 </h4>
+                <button type="button">Buy Now <img src="images/arrow1.png" ></button>
+
+            </div>
+            <div class="col-2">
+                <img src="images/ski2.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="images/add.png" alt="">
+                    <p><small>Add to Cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="images/fb.png">
+            <img src="images/tw.png">
+            <img src="images/ig1.png">
+        </div>
+    </div>
+        <script>
+            var menuList = document.getElementById("menuList");
+            menuList.style.maxHeight = "0px";
+            function togglemenu(){
+                if( menuList.style.maxHeight == "0px")
+                     {  
+                        menuList.style.maxHeight = "130px";
+                     }
+                 else 
+                     {
+                        menuList.style.maxHeight = "0px";
+                     }
+            }
+        </script>
+    <footer><p>&copy;CYRIL C. DEL ROSARIO </p></footer>
+    
+</body>
+</html>
